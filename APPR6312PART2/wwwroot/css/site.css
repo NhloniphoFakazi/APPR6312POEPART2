@@ -1,0 +1,296 @@
+/* Global Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    padding-top: 0;
+    background-color: #ffffff; /* White background */
+}
+
+/* Navigation */
+.navbar-brand {
+    font-weight: 700;
+}
+
+.navbar-nav .nav-link {
+    font-weight: 500;
+    margin: 0 5px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+    .navbar-nav .nav-link:hover {
+        background-color: rgba(255, 255, 255, 0.2);
+    }
+
+/* Cards */
+.card {
+    border: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    border-radius: 10px;
+    background-color: #ffffff;
+}
+
+    .card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    }
+
+/* Buttons */
+.btn {
+    border-radius: 25px;
+    padding: 10px 25px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn-lg {
+    padding: 12px 30px;
+    border-radius: 30px;
+}
+
+.btn-success {
+    background-color: #32CD32; /* Lime Green */
+    border-color: #32CD32;
+    color: #fff;
+}
+
+.btn-warning {
+    background-color: #FFD700; /* Beautiful Yellow */
+    border-color: #FFD700;
+    color: #000;
+}
+
+.btn-outline-success {
+    color: #32CD32;
+    border-color: #32CD32;
+}
+
+    .btn-outline-success:hover {
+        background-color: #32CD32;
+        color: white;
+    }
+
+.btn-outline-warning {
+    color: #FFD700;
+    border-color: #FFD700;
+}
+
+    .btn-outline-warning:hover {
+        background-color: #FFD700;
+        color: #000;
+    }
+
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(135deg, #32CD32 0%, #28a428 100%); /* Lime Green gradient */
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+}
+
+/* Section Titles */
+.section-title {
+    position: relative;
+    padding-bottom: 15px;
+    margin-bottom: 30px;
+    color: #32CD32; /* Lime Green */
+}
+
+    .section-title:after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 80px;
+        height: 3px;
+        background: #FFD700; /* Yellow underline */
+    }
+
+/* Feature Icons */
+.feature-icon {
+    transition: transform 0.3s ease;
+}
+
+.card:hover .feature-icon {
+    transform: scale(1.1);
+}
+
+/* Statistics */
+.stat-number {
+    font-weight: 700;
+    color: #32CD32;
+}
+
+.stat-label {
+    color: #6c757d;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Placeholder Image */
+.placeholder-image {
+    background: linear-gradient(45deg, #ffffff 25%, #f8f9fa 25%), linear-gradient(-45deg, #ffffff 25%, #f8f9fa 25%), linear-gradient(45deg, #f8f9fa 75%, #ffffff 75%), linear-gradient(-45deg, #f8f9fa 75%, #ffffff 75%);
+    background-size: 20px 20px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    border: 3px solid #FFD700; /* Yellow border */
+}
+
+/* Alert Styling */
+.alert-warning {
+    background-color: #fffbea; /* Light Yellow */
+    border-color: #FFD700;
+    color: #856404;
+}
+
+/* Navigation Bar Enhancements */
+.navbar-dark.bg-success {
+    background: linear-gradient(135deg, #32CD32 0%, #28a428 100%) !important;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-nav .nav-link {
+    border-radius: 20px;
+    margin: 0 3px;
+    padding: 8px 16px !important;
+    transition: all 0.3s ease;
+}
+
+    .navbar-nav .nav-link:hover {
+        background-color: rgba(255, 255, 255, 0.25);
+        transform: translateY(-2px);
+    }
+
+/* Button styles in navbar */
+.navbar-nav .btn-outline-warning {
+    border: 2px solid #FFD700;
+    color: #FFD700;
+}
+
+    .navbar-nav .btn-outline-warning:hover {
+        background-color: #FFD700;
+        color: #000;
+        transform: translateY(-2px);
+    }
+
+.navbar-nav .btn-warning {
+    border: 2px solid #FFD700;
+    background-color: #FFD700;
+    color: #000;
+}
+
+    .navbar-nav .btn-warning:hover {
+        background-color: #e6c200;
+        border-color: #e6c200;
+        transform: translateY(-2px);
+    }
+
+/* Dropdown menu styling */
+.dropdown-menu {
+    border: none;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.dropdown-item {
+    padding: 10px 20px;
+    transition: all 0.3s ease;
+    border-radius: 5px;
+    margin: 2px 5px;
+}
+
+    .dropdown-item:hover {
+        background-color: #f0fff0; /* Very light lime hover */
+        transform: translateX(5px);
+    }
+
+/* Footer enhancements */
+footer.bg-success {
+    background: linear-gradient(135deg, #28a428 0%, #32CD32 100%) !important;
+    color: #ffffff;
+}
+
+/* Table Styling */
+.table-success {
+    background-color: #32CD32;
+    color: #fff;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: rgba(50, 205, 50, 0.1);
+}
+
+/* Badge Styling */
+.badge {
+    font-size: 0.75em;
+    background-color: #FFD700;
+    color: #000;
+}
+
+/* Form Styling */
+.form-control:focus {
+    border-color: #32CD32;
+    box-shadow: 0 0 0 0.2rem rgba(50, 205, 50, 0.25);
+}
+
+.form-select:focus {
+    border-color: #32CD32;
+    box-shadow: 0 0 0 0.2rem rgba(50, 205, 50, 0.25);
+}
+
+/* Donation Form Fields */
+.donation-fields {
+    transition: all 0.3s ease;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero-section {
+        text-align: center;
+        padding: 3rem 1rem;
+    }
+
+    .display-4 {
+        font-size: 2.5rem;
+    }
+
+    .btn-lg {
+        display: block;
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    .navbar-nav .btn {
+        display: block;
+        width: 100%;
+        margin: 5px 0;
+    }
+
+    .navbar-nav .nav-link {
+        text-align: center;
+        margin: 2px 0;
+    }
+
+    .stat-number {
+        font-size: 2.5rem;
+    }
+}
+
+/* Custom Utilities */
+.text-shadow {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.border-radius-10 {
+    border-radius: 10px;
+}
+
+.bg-light-custom {
+    background-color: #f9fff9 !important; /* Pale lime-white */
+}
